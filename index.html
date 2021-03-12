@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Estilos CSS-->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <link rel="shortcut icon" href="imgs/mascotas.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Navbar ---------------------------------------------------------------------------------------------->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="imgs/icono.ico" alt="" width="32" height="26" class="d-inline-block align-top"> PetShop
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Ofertas</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Productos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Perros</a></li>
+                            <li><a class="dropdown-item" href="#">Gatos</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Hamsters</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" tabindex="-1">Servicios</a>
+                    </li>
+                </ul>
+                <div class="d-flex me-3">
+                    <a href=""><img src="imgs/usuario.png" height="24px" width="24px" alt="Icono Carrito de compras"></a>
+                </div>
+                <div class="d-flex me-4">
+                    <a href=""><img src="imgs/carrito-de-compras.png" height="24px" width="24px" alt="Icono Carrito de compras"></a>
+                </div>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="search">
+                    <button class="btn btn-outline-secondary" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar ---------------------------------------------------------------------------------------------->
+
+    <!-- Slideshow ---------------------------------------------------------------------------------------------->
+
+    <div id="carouselExampleIndicators" class="carousel  slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="imgs/slide_1.jpg" class="d-block w-100" alt="Perritos en pradera">
+            </div>
+            <div class="carousel-item">
+                <img src="imgs/slide_2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="imgs/slide_3.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Slideshow ---------------------------------------------------------------------------------------------->
+
+    <h2 class="text-center mt-4">Productos Más Vendidos</h2>
+
+    <div class="pmv">
+        <div class="row row-cols-1 row-cols-md-4 g-3">
+            <div class="col-md-4 col-sm-12">
+                <div class="card cartita text-center">
+                    <img src="/imgs/dog_chow.jpg" class="card-img-top img-fluid" alt="Dog">
+                    <div class="card-body">
+                        <h5 class="card-title">Precio</h5>
+                        <p class="card-body">Aqui va un texto de esos para explicar el producto brevemente</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card cartita text-center">
+                    <img src="/imgs/prod2.jfif" class="card-img-top" alt="Dog">
+                    <div class="card-body">
+                        <h5 class="card-title">Precio</h5>
+                        <p class="card-body">Aqui va un texto de esos para explicar el producto brevemente</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card cartita text-center">
+                    <img src="/imgs/prod3.jfif" class="card-img-top" alt="Dog">
+                    <div class="card-body">
+                        <h5 class="card-title">Precio</h5>
+                        <p class="card-body">Aqui va un texto de esos para explicar el producto brevemente</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card cartita text-center">
+                    <img src="/imgs/dog_chow.jpg" class="card-img-top" alt="Dog">
+                    <div class="card-body">
+                        <h5 class="card-title">Precio</h5>
+                        <p class="card-body">Aqui va un texto de esos para explicar el producto brevemente</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card cartita text-center">
+                    <img src="/imgs/dog_chow.jpg" class="card-img-top" alt="Dog">
+                    <div class="card-body">
+                        <h5 class="card-title">Precio</h5>
+                        <p class="card-body">Aqui va un texto de esos para explicar el producto brevemente</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card cartita text-center">
+                    <img src="/imgs/dog_chow.jpg" class="card-img-top" alt="Dog">
+                    <div class="card-body">
+                        <h5 class="card-title">Precio</h5>
+                        <p class="card-body">Aqui va un texto de esos para explicar el producto brevemente</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="hrs">
+
+    <h2 class="text-center mt-4">Nuestras Marcas</h2>
+
+    <div class=" marca  text-center mb-5 ">
+        <img src="/imgs/marcaRoyal.png" class="marcas1 mt-3">
+        <img src="https://images-na.ssl-images-amazon.com/images/G/33/img15/pet-products/ProPlan.png" alt="Beneful" class=" marcas1 mt-3">
+        <img src="imgs/marcaExo.jpg" alt="Marco Exo" class="marcas1 mt-3">
+        <img src="https://www.purina-latam.com/sites/g/files/auxxlc391/files/BP-Cat%20Chow_0.png" alt="Cat Chow" class="marcas1 mt-3">
+        <img src="https://cdn.worldvectorlogo.com/logos/pedigree.svg" alt="Pedigree" class="marcas1 mt-3">
+        <img src="https://i.pinimg.com/originals/8f/d8/16/8fd8167b8c5831cd8237efb188b26b21.png" alt="whiskas" class="marcas1 mt-3">
+        <img src="https://findlogovector.com/wp-content/uploads/2018/11/dingo-brand-logo-vector.png" alt="Dingo" class="marcas1 mt-3">
+
+        <img src="https://www.purina-latam.com/sites/g/files/auxxlc391/files/styles/kraken_generic_max_width_240/public/logo_Felix.jpg?itok=-Ux03R4M" alt="Felix" class="marcas1 mt-3">
+    </div>
+
+    <br>
+    <hr class="hrs">
+
+
+    <h2 class="text-center mt-4">Únete a Nosotros!</h2>
+
+    <div class="landing">
+        <div class="row landing">
+            <div class="col-md-6 ">
+                <p class="lead text-center">Crea una cuenta y recibe ofertas exclusivas de nuestra tienda.</p>
+                <p class=" lead text-center">Dale lo mejor a tu mascota.</p>
+            </div>
+            <div class="col-md-6 formulario">
+                <form>
+
+                    <div class="mb-3">
+                        <label for="exampleInput1" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="exampleInput1">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Correo</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleTextarea" class="form-label">¿Que te interesa?</label>
+                        <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-secondary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Site footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <h6>Acerca</h6>
+                    <p class="text-justify">Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative to help the upcoming programmers with the code. Scanfcode focuses on providing the most efficient code or snippets as the code wants to be simple. We will help programmers
+                        build up concepts in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.</p>
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                    <h6>Contactactos</h6>
+                    <ul class="footer-links">
+                        <li>Telefono: 123456</li>
+                        <li>Dirección: carrera x # xx - x</li>
+                        <h6>Catálogo</h6>
+                        <li><a href="http://scanfcode.com/category/back-end-development/">Perros</a></li>
+                        <li><a href="http://scanfcode.com/category/java-programming-language/">Gatos</a></li>
+                        <li><a href="http://scanfcode.com/category/java-programming-language/">Servicios</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                    <h6>Encuentranos</h6>
+                    <p>Google Maps</p>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                    <p class="copyright-text">Copyright &copy; 2021 All Rights Reserved by
+                        <a href="#">The Best Team Ever</a>.
+                    </p>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <ul class="social-icons">
+                        <li><a class="facebook" href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li><a class="twitter" href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a class="dribbble" href="#"><i class="fab fa-dribbble"></i></a></li>
+                        <li><a class="linkedin" href="#"><i class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+
+
+</html>
